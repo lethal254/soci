@@ -1,0 +1,106 @@
+.profile {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  transform: translateX(0);
+  transition: all 1s ease;
+}
+
+.profile__logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 4rem;
+}
+.profile__logoImage {
+  color: #e3e3e9;
+  font-size: 2rem;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.profile__logoImage:hover {
+  color: #065a60;
+}
+.profile__logoText {
+  font-display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e3e3e9;
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.profile__hamburger {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.profile__hamburgerdash {
+  flex: 0.9;
+  width: 2rem;
+  height: 0.2rem;
+  background-color: #fff;
+  margin-bottom: 0.2rem;
+  transition: all 0.5s ease;
+}
+.profile__hamburger:hover .profile__hamburgerdash {
+  background-color: #065a60;
+}
+.profile__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile__avatarcircle {
+  border: 2px solid #065a60;
+  border-radius: 50%;
+  padding: 0.5rem;
+  margin-bottom: 0.6rem;
+  cursor: pointer;
+}
+
+.profile__avatar {
+  width: 6rem !important;
+  height: 6rem !important;
+  transform: scale(1);
+  transition: all 0.5s ease-in-out;
+}
+.profile__avatarcircle:hover .profile__avatar {
+  transform: scale(1.15);
+}
+.profile__name {
+  color: rgb(211, 205, 205);
+  font-size: 1.5rem;
+}
+.profile__username {
+  color: rgb(185, 177, 177);
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+.profile__followers,
+.profile__posts {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  color: rgb(185, 177, 177);
+  padding: 1rem;
+  cursor: pointer;
+  background: transparent;
+  transition: background 0.5s;
+}
+.profile__followers:hover,
+.profile__posts:hover {
+  background-color: #006466;
+}
+.link {
+  text-decoration: none;
+}
